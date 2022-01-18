@@ -1,3 +1,10 @@
+/* IMPORTANTE */
+/* 3 WAYS OF BUILDING LAYOUTS WITH CSS 
+1. Floats (not used anymore)
+2. Flexbox -> laying out elements in a 1-dimensional row. Perfect for component layouts.
+3. CSS Grid -> laying out elements in a fully-fledged 2-dimensional grid. Perfect for page layouts and complex components.
+*/
+
 /*
 SPACING SYSTEM (px)
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128

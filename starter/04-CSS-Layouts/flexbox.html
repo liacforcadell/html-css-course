@@ -36,10 +36,71 @@
         /* STARTER */
         font-family: sans-serif;
         background-color: #ddd;
-        font-size: 40px;
+        font-size: 30px;
         margin: 40px;
 
         /* FLEXBOX */
+        /* - To start using flexbox we need to set the display: flex on a container element (any element that has a couple of child elements). This element container is called flex container.
+
+        - Horizontally: each of the flex items takes the exact space that its necessary for their text content.
+
+        - Vertically: by default, all the flex items are as tall as the tallest flex element, or if they don't have a height, they will ocuppy only the space they need for the content.
+        */
+        display: flex;
+        align-items: center;
+        /* align-items: stretch (default) */
+        /* align-items: center ->vertically aligns items in flex, they ocuppy only space they need */
+        /* align-items: flex-start or flex-end -> to align to the top or bottom. */
+        justify-content: flex-start;
+        /* justify-content: center -> centers all flex items horizontally */
+        /* justify-content: space-between -> distributes remaining space between items evenlly */
+        /* --------> MAIN AXIS (horizontal line)*/
+        /* | CROSS AXIS (vertical line)*/
+        /* | */
+        /* | */
+        /* | */
+        gap: 10px;
+      }
+
+      .el {
+        /*
+        DEFAULTS:
+        BAD_PRACTICE: using one of these individually
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: auto;
+        */
+
+        /* flex-basis is used for width of items */
+        /* flex-basis: 200px; */
+        /* Obs: if there is not enough space in the container to fit the iteams to se size of the flex-basis, flexbox is allowd to shrink this items by defacult -> flex-shrink: 1;
+        To change this behavior set flex-shrink: 0*/
+        /* flex-shrink: 0; */
+        /* BAD_PRACTICE using flex-shrink alone*/
+        /* flex-grow: determines wether elements are allowd to grow as large as they can or not. To grow: the ramaining space is evenly divided between elements*/
+        /* flex-grow: 1; */
+        /* BAD_PRACTICE using flex-grow alone*/
+
+        /* CORRECT: always use shorthand property*/
+        /* flex: 0 0 200px; */
+        /* flex: flex-grow flex-shrink flex-basis*/
+        flex: 1;
+      }
+
+      .el--1 {
+        align-self: flex-start;
+        /* order: 2; */
+        /* flex-grow: 2; */
+      }
+
+      .el--5 {
+        align-self: stretch;
+        order: 1;
+      }
+
+      .el--6 {
+        order: -1;
+        /* first position */
       }
     </style>
   </head>
@@ -50,9 +111,9 @@
       <div class="el el--3">CSS</div>
       <div class="el el--4">are</div>
       <div class="el el--5">amazing</div>
-      <div class="el el--6">languages</div>
+      <!-- <div class="el el--6">languages</div>
       <div class="el el--7">to</div>
-      <div class="el el--8">learn</div>
+      <div class="el el--8">learn</div> -->
     </div>
   </body>
 </html>
