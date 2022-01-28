@@ -116,6 +116,18 @@ body {
   display: grid;
   column-gap: 6.4rem;
   row-gap: 9.6rem;
+  /* using :not(:last-child) */
+  /* margin-bottom: 9.6rem; */
+}
+
+/* using :not(:last-child) */
+/* .grid:last-child {
+  margin-bottom: 0;
+} */
+
+/* Means a grid that is not the last child: */
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
 }
 
 .grid--2-cols {
