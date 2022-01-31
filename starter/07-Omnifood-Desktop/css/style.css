@@ -25,7 +25,7 @@
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 3.2rem;
+  gap: 4.8rem;
 }
 
 .main-nav-link:link,
@@ -56,6 +56,13 @@
   background-color: #cf711f;
 }
 
+/* MOBILE NAVIGATION */
+
+.btn-mobile-nav {
+  border: none;
+}
+.icon-mobile-nav {
+}
 /* ******************** */
 /*     HERO SECTION     */
 /* ******************** */
@@ -89,7 +96,7 @@
   display: flex;
   align-items: center;
   gap: 1.6rem;
-  margin-top: 8rem;
+  margin-top: 6.4rem;
 }
 
 .delivered-imgs {

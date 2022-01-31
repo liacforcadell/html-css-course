@@ -16,6 +16,7 @@
   Default: 1
   Small: 1.05
   Medium: 1.2
+  Large: 1.8
   Paragraph default: 1.6
 
   - Letter spacing: 
@@ -277,6 +278,7 @@ body {
 
 .list-item {
   font-size: 1.8rem;
+  line-height: 1.2;
   display: flex;
   align-items: center;
   gap: 1.6rem;
