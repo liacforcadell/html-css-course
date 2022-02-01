@@ -262,6 +262,11 @@ We should use em in media queries, NOT rem, because rem has some bugs in some br
   .btn:link,
   .btn:visited {
     padding: 2.4rem 1.6rem;
+    font-size: 1.8rem;
+  }
+
+  .margin-right-sm {
+    margin-right: 1rem !important;
   }
 
   .section-hero {
