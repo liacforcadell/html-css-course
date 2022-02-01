@@ -101,11 +101,24 @@
             </div>
           </div>
           <div class="hero-img-box">
-            <img
-              src="img/hero.png"
+            <!-- We do this because not all browsers support webp -->
+            <!-- Image webp format: better than png
+            Safari only has partial support for this format -->
+            <picture>
+              <source srcset="img/hero.webp" type="image/webp" />
+              <source srcset="img/hero-min.png" type="image/png" />
+              <img
+                src="img/hero-min.png"
+                class="hero-img"
+                alt="Woman enjoying food, meals in storage container, and food bowls on a table"
+              />
+              <!-- we use src="img/hero-min.png" as a fallback, because all browsers will understand this one -->
+            </picture>
+            <!-- <img
+              src="img/hero-min.png"
               class="hero-img"
               alt="Woman enjoying food, meals in storage container, and food bowls on a table"
-            />
+            /> -->
           </div>
         </div>
       </section>
