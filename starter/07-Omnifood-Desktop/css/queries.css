@@ -133,6 +133,7 @@ We should use em in media queries, NOT rem, because rem has some bugs in some br
   /* MOBILE NAVIGATION */
   .btn-mobile-nav {
     display: block;
+    z-index: 9999;
   }
 
   .main-nav {
